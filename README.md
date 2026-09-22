@@ -110,6 +110,7 @@ The settings menu (the three dots in the title row) contains:
 | Choose VRChat Folder | Only needed when automatic detection fails |
 | Clear Recent Files | Forget the remembered worlds |
 | 中文界面 | Switch the interface language |
+| About | Version, project link, and the licence note |
 
 Settings are stored in `%APPDATA%\VRCW Launcher\settings.ini`.
 

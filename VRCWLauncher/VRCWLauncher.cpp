@@ -506,7 +506,7 @@ namespace
         L"VRChat could not be started.",
         L"Segoe UI",
         L"About",
-        L"VRCW Launcher 1.0.1\r\n\r\nOpen source project:\r\ngithub.com/2737471001/vrcw-launcher\r\n\r\nThis is an unofficial fan tool. VRChat is a trademark of VRChat Inc., and this project is not affiliated with them in any way.\r\n\r\nThe software is free and open source. If you paid money for it, you have been scammed."
+        L"VRCW Launcher 1.0.2\r\n\r\nOpen source project:\r\ngithub.com/vosd04/vrcw-launcher\r\n\r\nThis is an unofficial fan tool. VRChat is a trademark of VRChat Inc., and this project is not affiliated with them in any way.\r\n\r\nThe software is free and open source. If you paid money for it, you have been scammed."
     };
 
     const Strings CHINESE_STRINGS =
@@ -535,7 +535,7 @@ namespace
         L"VRChat 启动失败。",
         L"Microsoft YaHei UI",
         L"关于",
-        L"VRCW Launcher 1.0.1\r\n\r\n开源项目：\r\ngithub.com/2737471001/vrcw-launcher\r\n\r\n这是第三方非官方工具。VRChat 是 VRChat Inc. 的商标，本项目与 VRChat Inc. 没有任何关联。\r\n\r\n本软件完全免费开源。如果你是花钱买到的，那你被骗了。"
+        L"VRCW Launcher 1.0.2\r\n\r\n开源项目：\r\ngithub.com/vosd04/vrcw-launcher\r\n\r\n这是第三方非官方工具。VRChat 是 VRChat Inc. 的商标，本项目与 VRChat Inc. 没有任何关联。\r\n\r\n本软件完全免费开源。如果你是花钱买到的，那你被骗了。"
     };
 
     bool g_chineseUi = false;
