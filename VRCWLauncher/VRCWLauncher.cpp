@@ -415,6 +415,7 @@ namespace
     constexpr UINT MENU_CHOOSE_VRCHAT_FOLDER = 3;
     constexpr UINT MENU_CLEAR_RECENT_FILES = 4;
     constexpr UINT MENU_LANGUAGE = 5;
+    constexpr UINT MENU_ABOUT = 6;
 
     //
     // Everything the pointer can hover over.
@@ -475,6 +476,8 @@ namespace
         const wchar_t* launchErrorWorldGone;
         const wchar_t* launchErrorStart;
         const wchar_t* fontFamily;
+        const wchar_t* menuAbout;
+        const wchar_t* aboutText;
     };
 
     const Strings ENGLISH_STRINGS =
@@ -501,7 +504,9 @@ namespace
         L"Choose a VRCW file first.",
         L"The selected VRCW file no longer exists.",
         L"VRChat could not be started.",
-        L"Segoe UI"
+        L"Segoe UI",
+        L"About",
+        L"VRCW Launcher 1.0.1\r\n\r\nOpen source project:\r\ngithub.com/2737471001/vrcw-launcher\r\n\r\nThis is an unofficial fan tool. VRChat is a trademark of VRChat Inc., and this project is not affiliated with them in any way.\r\n\r\nThe software is free and open source. If you paid money for it, you have been scammed."
     };
 
     const Strings CHINESE_STRINGS =
@@ -528,7 +533,9 @@ namespace
         L"请先选择一个 VRCW 文件。",
         L"所选的 VRCW 文件已不存在。",
         L"VRChat 启动失败。",
-        L"Microsoft YaHei UI"
+        L"Microsoft YaHei UI",
+        L"关于",
+        L"VRCW Launcher 1.0.1\r\n\r\n开源项目：\r\ngithub.com/2737471001/vrcw-launcher\r\n\r\n这是第三方非官方工具。VRChat 是 VRChat Inc. 的商标，本项目与 VRChat Inc. 没有任何关联。\r\n\r\n本软件完全免费开源。如果你是花钱买到的，那你被骗了。"
     };
 
     bool g_chineseUi = false;
@@ -2685,6 +2692,12 @@ namespace
                 GetStrings().menuLanguage,
                 g_chineseUi });
 
+        items.push_back(
+            PopupMenuItem{
+                MENU_ABOUT,
+                GetStrings().menuAbout,
+                false });
+
         int widthLogical = 0;
         int heightLogical = 0;
 
@@ -2726,6 +2739,15 @@ namespace
             Settings::Save(g_settings);
 
             InvalidateMainWindow();
+
+            break;
+
+        case MENU_ABOUT:
+            MessageBoxW(
+                hwnd,
+                GetStrings().aboutText,
+                WINDOW_TITLE,
+                MB_OK | MB_ICONINFORMATION);
 
             break;
 
