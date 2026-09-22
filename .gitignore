@@ -1,0 +1,25 @@
+# Build output
+x64/
+Debug/
+Release/
+*.user
+*.aps
+*.ipch
+
+# Visual Studio
+.vs/
+*.suo
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+
+# Temporary files
+*.log
+*.tlog
+*.obj
+*.pch
+*.pdb
+*.ilk
+*.exe
+*.lib
+*.exp

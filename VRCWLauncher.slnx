@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="VRCWLauncher/VRCWLauncher.vcxproj" Id="3dfd3136-c55d-459d-aa75-28cb7bc0cd89" />
+</Solution>
